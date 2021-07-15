@@ -1,3 +1,3 @@
 # Weather-App
-Fully Responsive Aeather App
+Fully Responsive Weather App
 With Hourly and weekly Forecast
