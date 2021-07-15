@@ -1,6 +1,6 @@
 //Get Your API KEY from https://openweathermap.org/api/
 
-let apiKey = ``;
+let apiKey = `04e93bd1bc303e7cb5e90180c801c9d3`;
 function sidebarToggle1() {
   let page1 = document.getElementById('page1');
   let page2 = document.getElementById('page2');
