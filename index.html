@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Weather</title>
+</head>
+<body onload="getLocation()">
+  <div class="WeatherBody" id="page1">
+    <div class="header">
+      <div class="navbarIcon">
+        <img onclick="sidebarToggle1()" class="menuPng" src="img/menu.png" alt="" />
+      </div>
+      <div class="Query">
+        <p id="city"></p>
+        <span id="country"></span>
+      </div>
+    </div>
+    <!-- DEFAULT PAGE CONTENT -->
+    <div class="default-page-content">
+      <div class="today">
+        <p>
+          Today
+        </p>
+        <div class="Date_Day" id="Date_Day"></div>
+      </div>
+      <div class="temperature" id="temperature"></div>
+      <div class="hourlyForecast">
+        <div class="hourlyContainer" id="hourlyContainer"></div>
+      </div>
+    </div>
+  </div>
+  <!-- SIDEBAR CONTENT -->
+  <div id="page2" style="display: none;" class="sidebar Sidebar-active">
+    <div class="navbarIcon">
+      <img onclick="sidebarToggle2()" class="sidebarMenu" src="img/menu.png" alt="" />
+    </div>
+    <div class="searchBar">
+      <div class="searchBox">
+        <input type="text" name="" id="cityQuery" placeholder="Search City" />
+        <button onclick="getCoords()" type="searchBtn button"><i class="fas fa-search"></i></button>
+      </div>
+    </div>
+    <div>
+      <p id="next-7-days">
+        Next 7 Days >>>
+      </p>
+    </div>
+    <hr />
+    <div class="weather-forecast">
+      <div class="weather-forecast-container" id="weather-forecast-container"></div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+</style>
+</body>
+</html>
