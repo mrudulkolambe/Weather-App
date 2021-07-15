@@ -182,8 +182,3 @@ function getCoords() {
   }
   latlog.send();
 };
-
-function kelvinToCelsius(tempK) {
-  let celsiusTemp = tempK - 273.15;
-  return `${celsiusTemp.toFixed(2)}&#176;C`;
-};
