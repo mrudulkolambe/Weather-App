@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  width: max-content;
+  /* overflow-y: hidden; */
+}
+.WeatherBody {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  overflow-y: hidden;
+}
+.header {
+  width: 100vw;
+}
+.tempSwitch {
+  position: absolute;
+  margin: 20px;
+  top: 1.5%;
+  left: 3%;
+}
+.Query {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  align-items: center;
+  font-size: 20px;
+}
+#city {
+  color: white;
+  font-weight: bold;
+}
+#country {
+  color: white;
+}
+.menuPng {
+  position: absolute;
+  margin: 20px;
+  top: 1.5%;
+  right: 3%;
+  height: 30px;
+  width: 30px;
+  filter: invert(1);
+}
+.today {
+  text-align: center;
+}
+.today p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.Date_Day {
+  margin-top: 2%;
+  font-size: 14px;
+}
+.temperature {
+  text-align: center;
+}
+.temperature p {
+  margin-top: 13%;
+  font-size: 50px;
+  font-weight: 300;
+}
+.feelsLike p {
+  font-size: 14px;
+  margin-top: 1.5%;
+  font-weight: normal;
+  margin-bottom: 10%;
+}
+.hourlyForecast {
+  width: 100%;
+  height: 200px;
+  border-top: 1px solid #eee;
+  overflow-y: hidden;
+}
+.hourlyContainer {
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  padding-top: 10px;
+
+}
+.hourlyContainer::-webkit-scrollBar {
+  width: 0px;
+}
+.hourlyItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100vw;
+  margin: 10px;
+}
+.hourDiv {
+  margin-bottom: 2%;
+}
+.hourlyChild {
+  width: 70px;
+  height: 170px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 40px;
+}
+.hourlyItem p {
+  text-align: center;
+}
+.now {
+  background: white;
+  color: black;
+}
+.sidebar {
+  z-index: 10;
+  height: 100%;
+  width: 100vw;
+  background-color: white;
+  color: black;
+  overflow-y: scroll;
+}
+#next-7-days {
+  margin-top: 10%;
+  width: 100vw;
+  text-align: center;
+  color: blue;
+  font-size: 14px;
+}
+hr {
+  height: 1px !important;
+  width: 90vw;
+  margin: 3% auto;
+  border: none;
+  background-color: #eee;
+}
+.weather-forecast {
+  width: 100%;
+}
+.weather-forecast-container {
+  height: auto !important;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  border: 1px solid black;
+}
+.forecast-items {
+  margin: 0;
+  height: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+.forecast-child2 {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.forecast-weather-icons {
+  vertical-align: middle;
+  height: 30px;
+  width: 30px;
+  margin-right: 25px;
+}
+.forecast-info {
+  font-weight: 400;
+}
+.sidebarMenu {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 1.5%;
+  left: 3%;
+  margin: 20px;
+}
+.fas {
+  margin-right: 8px;
+}
+.forecast-items-child {
+  margin: 5px 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(216,216,216);
+  padding: 10px;
+  padding-right: 20px;
+  font-size: 20px;
+}
+.extraInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: left;
+  text-align: left;
+  padding: 3px 10px;
+  height: auto;
+  border-bottom: 1px solid rgb(216,216,216);
+  text-transform: capitalize;
+}
+.extraInfo div {
+  display: flex;
+  justify-content: space-between;
+}
+.lowerCase {
+  text-transform: lowercase;
+}
+.arrowUp {
+  font-family: "Font Awesome 5 Free";
+  content: "\f106";
+}
+.weatherExtra {
+  display: flex;
+}
+.searchBar {
+  width: 100%;
+  margin: 0;
+  margin: auto;
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchBox {
+  width: 260px;
+  height: 30px;
+  outline: none;
+  border: 1px solid #333;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.searchBox input {
+  width: 180px;
+  height: 28px;
+  outline: none;
+  border: none;
+  background: white;
+  margin: auto;
+}
+button {
+  background: transparent;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  color: grey;
+}
+@media only screen and (max-width: 768px) {
+  .extraInfo
+  {
+    font-size: 16px;
+  }
+}
